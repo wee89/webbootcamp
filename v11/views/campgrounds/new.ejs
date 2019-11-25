@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+<div class="container">
+    <h1 style="text-align: center">Create a New Campground</h1>
+    <div style="width: 30%; margin: 25px auto;">
+        <form action="/campgrounds", method="POST">
+            <input class="form-control" type="text" name="name" placeholder="Name" style="margin: 20px;">
+            <input class="form-control" type="text" name="image" placeholder="Image url" style="margin: 20px;">
+            <input class="form-control" type="text" name="description" placeholder="Description" style="margin: 20px;">
+
+            <label for="location" style="margin: 20px;">Location</label>
+            <input class="form-control" type="text" name="location" id="location" placeholder="Yosemite Nationnal Park" style="margin: 20px;">
+            
+            <button class="btn btn-lg btn-info btn-block" style="margin: 20px;">Submit!</button>
+        </form>
+        <a href="/campgrounds">Go Back</a>
+    </div>
+</div>
+<% include ../partials/footer %>
